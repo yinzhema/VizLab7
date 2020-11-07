@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Visualization Lab 7 </title>
+
+    <!-- Load CSS files -->
+    <!-- You CSS rules-->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/topojson@3"></script>
+   
+    <!-- Load Javascript files -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+
+    <!-- Your code -->
+    <script src="script.js" defer type="module"></script>
+    
+  </head>
+  <body>
+    <h1>Airport Connections</h1>
+    <div id='radioButtoms'>
+      <input type="radio" id="airports" name="airports" value="airports" checked>
+      <label for="airports">Force</label>
+      <input type="radio" id="map" name="map" value="map">
+      <label for="map">Map</label>
+    </div>
+    <div class='viz'></div>
+  </body>
+</html>
